@@ -1,27 +1,24 @@
 ///<reference path='com/codebelt/components/vehicles/Car.ts'/>
 ///<reference path='com/codebelt/components/vehicles/Truck.ts'/>
 
-import contants = com.codebelt.constants;
-import interfaces = com.codebelt.interfaces;
-import vehicles = com.codebelt.components.vehicles;
-import accessories = com.codebelt.components.accessories;
-import soundsystems = com.codebelt.components.accessories.soundsystems;
+import Car = com.codebelt.components.vehicles.Car;
+import Truck = com.codebelt.components.vehicles.Truck;
 
 module com.codebelt
 {
     export class Main
     {
-        private _compact:vehicles.Car;
-        private _pickup:vehicles.Truck;
+        private _compact:Car;
+        private _pickup:Truck;
 
         constructor()
         {
-            this._compact = new vehicles.Car(21, 18);
+            this._compact = new Car(21, 18);
             this._compact.changeGear();
 
             this._compact.useAccessory();
 
-            this._pickup = new vehicles.Truck(16, 23);
+            this._pickup = new Truck(16, 23);
             this._pickup.changeGear();
             this._pickup.useAccessory();
 
@@ -34,3 +31,4 @@ module com.codebelt
         }
     }
 }
+var Main = com.codebelt.Main;

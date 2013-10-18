@@ -1,4 +1,7 @@
 ///<reference path='../../interfaces/IAudible.ts'/>
+
+import IAudible = com.codebelt.interfaces.IAudible;
+
 module com.codebelt.components.vehicles
 {
     export class Vehicle
@@ -6,10 +9,10 @@ module com.codebelt.components.vehicles
         private _gasMileage:number;
         private _fuelAvailable:number;
         private _milesTraveled:number;
-        private _moving:bool = false;
+        private _moving:boolean = false;
 
         public name:string;
-        public soundSystem:interfaces.IAudible;
+        public soundSystem:IAudible;
 
         constructor(mpg:number=21, fuel:number=18.5)
         {

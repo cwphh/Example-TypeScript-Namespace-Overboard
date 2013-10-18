@@ -1,5 +1,7 @@
 ///<reference path='../../constants/TireType.ts'/>
 
+import TireType = com.codebelt.constants.TireType;
+
 module com.codebelt.components.accessories
 {
     export class Tire
@@ -9,13 +11,13 @@ module com.codebelt.components.accessories
         constructor(tire:string)
         {
             switch (tire) {
-                case constants.TireType.SNOW :
+                case TireType.SNOW :
                     this._type = "storm-ready snow";
                     break;
-                case constants.TireType.HIGH_PERFORMANCE :
+                case TireType.HIGH_PERFORMANCE :
                     this._type = "high-performance radial";
                     break;
-                case constants.TireType.ECONOMICAL :
+                case TireType.ECONOMICAL :
                 default :
                    this._type = "economical bias-ply";
             }

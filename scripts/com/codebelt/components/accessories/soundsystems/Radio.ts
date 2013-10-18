@@ -1,10 +1,12 @@
 ///<reference path='../../../interfaces/IAudible.ts'/>
 
+import IAudible = com.codebelt.interfaces.IAudible;
+
 module com.codebelt.components.accessories.soundsystems
 {
-    export class CDPlayer implements interfaces.IAudible
+    export class Radio implements IAudible
     {
-        public isPlaying:bool;
+        public isPlaying:boolean;
 
         constructor()
         {
@@ -13,24 +15,19 @@ module com.codebelt.components.accessories.soundsystems
 
         public turnOn():void
         {
-            console.log("cd player on");
-            this.isPlaying = true;
+            console.log("radio on");
+            this.isPlaying = false;
         }
 
         public playSelection(preset:number):void
         {
-            console.log("cd player selection play: track", preset);
+            console.log("radio selection play: channel preset", preset);
         }
 
         public turnOff():void
         {
-            console.log("cd player off");
+            console.log("radio off");
             this.isPlaying = false;
-        }
-
-        public eject():void
-        {
-            console.log("cd player eject");
         }
     }
 }

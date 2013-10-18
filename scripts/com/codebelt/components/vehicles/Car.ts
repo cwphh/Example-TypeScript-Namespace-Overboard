@@ -3,11 +3,16 @@
 ///<reference path='../../constants/TireType.ts'/>
 ///<reference path='../accessories/soundsystems/CDPlayer.ts'/>
 
+import Vehicle = com.codebelt.components.vehicles.Vehicle;
+import CDPlayer = com.codebelt.components.accessories.soundsystems.CDPlayer;
+import Tire = com.codebelt.components.accessories.Tire;
+import TireType = com.codebelt.components.constants.TireType;
+
 module com.codebelt.components.vehicles
 {
-    export class Car extends vehicles.Vehicle
+    export class Car extends Vehicle
     {
-        private _tires:accessories.Tire;
+        private _tires:Tire;
 
         constructor(mpg:number, fuel:number)
         {
@@ -15,8 +20,8 @@ module com.codebelt.components.vehicles
 
             this.name = "Car";
 
-            this._tires = new accessories.Tire(constants.TireType.HIGH_PERFORMANCE);
-            this.soundSystem = new soundsystems.CDPlayer();
+            this._tires = new Tire(TireType.HIGH_PERFORMANCE);
+            this.soundSystem = new CDPlayer();
 
             console.log(this.name, "has", this._tires.getType(), "tires");
         }

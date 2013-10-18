@@ -2,7 +2,7 @@ module com.codebelt.interfaces
 {
     export interface IAudible
     {
-        isPlaying:bool;
+        isPlaying:boolean;
         turnOn():void;
         playSelection(preset:number):void;
         turnOff():void;

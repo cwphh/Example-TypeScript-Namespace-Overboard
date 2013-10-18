@@ -3,10 +3,13 @@
 <head>
     <title>JavaScript Namespacing TypeScript Internal Modules</title>
 
-    <script type="text/javascript" src="assets/scripts/bin/main.js"></script>
+    <script type="text/javascript" src="scripts/_compiled/main.js"></script>
     <script>
-        //Creates an instance of the Main class which fires off the constructor.
-        var main = new com.codebelt.Main();
+        // Get the namespace class;
+        var Main = com.codebelt.Main;
+
+        var app = new Main();
+        console.log("app", app);
     </script>
 </head>
 <body>

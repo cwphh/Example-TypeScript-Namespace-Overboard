@@ -1,0 +1,16 @@
+{
+    "name": "TypeScript-Grunt-Boilerplate",
+    "version": "0.1.0",
+
+    "appVersion": "0.1.0",
+    "description": "A TypeScript Boilerplate for Web Applications",
+    "url": "https://github.com/codeBelt/TypeScript-Boilerplate",
+    "developedBy": "codeBelt",
+
+    "devDependencies": {
+        "grunt": "0.4.1",
+        "matchdep": "0.1.2",
+
+        "grunt-typescript": "0.2.4"
+    }
+}
