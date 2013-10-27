@@ -1,11 +1,11 @@
 ///<reference path='com/codebelt/components/vehicles/Car.ts'/>
 ///<reference path='com/codebelt/components/vehicles/Truck.ts'/>
 
-import Car = com.codebelt.components.vehicles.Car;
-import Truck = com.codebelt.components.vehicles.Truck;
-
 module com.codebelt
 {
+    import Car = com.codebelt.components.vehicles.Car;
+    import Truck = com.codebelt.components.vehicles.Truck;
+
     export class Main
     {
         private _compact:Car;
@@ -31,4 +31,3 @@ module com.codebelt
         }
     }
 }
-var Main = com.codebelt.Main;

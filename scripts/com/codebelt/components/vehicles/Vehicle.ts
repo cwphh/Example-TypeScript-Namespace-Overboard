@@ -1,9 +1,9 @@
 ///<reference path='../../interfaces/IAudible.ts'/>
 
-import IAudible = com.codebelt.interfaces.IAudible;
-
 module com.codebelt.components.vehicles
 {
+    import IAudible = com.codebelt.interfaces.IAudible;
+
     export class Vehicle
     {
         private _gasMileage:number;

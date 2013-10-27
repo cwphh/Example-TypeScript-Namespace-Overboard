@@ -3,13 +3,13 @@
 ///<reference path='../../constants/TireType.ts'/>
 ///<reference path='../accessories/soundsystems/Radio.ts'/>
 
-import Vehicle = com.codebelt.components.vehicles.Vehicle;
-import Radio = com.codebelt.components.accessories.soundsystems.Radio;
-import Tire = com.codebelt.components.accessories.Tire;
-import TireType = com.codebelt.components.constants.TireType;
-
 module com.codebelt.components.vehicles
 {
+    import Vehicle = com.codebelt.components.vehicles.Vehicle;
+    import Radio = com.codebelt.components.accessories.soundsystems.Radio;
+    import Tire = com.codebelt.components.accessories.Tire;
+    import TireType = com.codebelt.constants.TireType;
+
     export class Truck extends Vehicle
     {
          private _tires:Tire;

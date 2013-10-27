@@ -1,9 +1,9 @@
 ///<reference path='../../../interfaces/IAudible.ts'/>
 
-import IAudible = com.codebelt.interfaces.IAudible;
-
 module com.codebelt.components.accessories.soundsystems
 {
+    import IAudible = com.codebelt.interfaces.IAudible;
+
     export class Radio implements IAudible
     {
         public isPlaying:boolean;

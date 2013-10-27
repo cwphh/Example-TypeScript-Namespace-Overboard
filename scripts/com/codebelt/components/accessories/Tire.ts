@@ -1,9 +1,9 @@
 ///<reference path='../../constants/TireType.ts'/>
 
-import TireType = com.codebelt.constants.TireType;
-
 module com.codebelt.components.accessories
 {
+    import TireType = com.codebelt.constants.TireType;
+
     export class Tire
     {
         private _type:string;
